@@ -1,8 +1,30 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Template</title>
-</head>
-<body>
-</body>
+  <head>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="plant.js"></script>
+    <title>Sums of Multiples</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Sums of Multiples</h1>
+
+        <p>We can calculate the sum of all the multiples of two numbers, below a limit.</p>
+        <form id="multiplesForm">
+            <label for="multipleX">First multiple:</label>
+            <input type="number" id="multipleX" name="multipleX"><br>
+            <label for="multipleY">Second multiple:</label>
+            <input type="number" id="multipleY" name="multipleY"><br>
+            <label for="limit">Upper limit:</label>
+            <input type="number" id="limit" name="limit"><br>
+            <input type="submit" value="Submit"><br>
+        </form>
+
+        <div id="results">
+            <p>The resulting sum is: <span id="sum"></span></p>
+        </div>
+    </div>
+  </body>
 </html>
