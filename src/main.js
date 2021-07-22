@@ -10,9 +10,9 @@ $(document).ready(function () {
     $("#multiplesForm").submit(function (e) {
         e.preventDefault();
 
-        const x = $("#multipleX").val();
-        const y = $("#multipleY").val();
-        const limit = $("#limit").val();
+        const x = parseInt($("#multipleX").val());
+        const y =  parseInt($("#multipleY").val());
+        const limit =  parseInt($("#limit").val());
         const sum = multiplesXandYtoLimit(limit)(x)(y);
 
         const newState = stateControl(addToSum(sum));
